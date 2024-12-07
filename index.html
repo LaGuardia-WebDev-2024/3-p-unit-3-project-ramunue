@@ -1,6 +1,6 @@
 <!--
 Requirements
-[  ] Two External Links
+[ x ] Two External Links
 [  ] Table
 [  ] Three CSS Rules
 [  ] Three Images
@@ -13,26 +13,62 @@ Select ONE Additional Feature to Add
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shin Chan's Recipe Book</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Make the image smaller */
+    .recipe-image {
+      width: 50%;  /* Adjusted size to make the image smaller */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Style the list inside the table */
+    .ingredients-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <h1>____'s Recipe Book</h1>
+  <h1>Shin Chan's Recipe Book</h1>
 
   <h2>Contents:</h2>
 
   <ol>
-    <li><a href="?">Recipe #1</a></li>
+    <li><a href="https://www.okonomikitchen.com/vegan-onigiri-japanese-rice-ball-recipe/">Star cookie-filled onigiri</a></li>
+    <li><a href="http://www.lespetitespestes.com/blog/2016/8/16/to-make-umeboshi-apple-compote">Skewered grilled umeboshi with apple slices</a></li>
+    <li><a href="https://www.anncoojournal.com/wasabi-ice-cream-wasabi-aisu/3">Wasabi ice cream</a></li>
   </ol>
 
-  <h2 id="?">Recipe #1</h2>
+  <h2 id="recipe1">Recipe #1: Star Cookie-filled Onigiri</h2>
+  <img class="recipe-image" src="https://thesimplesprinkle.com/wp-content/uploads/2021/06/onigiri-blog-6.jpg" alt="Star Cookie-filled Onigiri">
 
   <ul>
     <li>Time: _</li>
@@ -47,13 +83,29 @@ Select ONE Additional Feature to Add
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><ul class="ingredients-list">
+            <li>Rice</li>
+            <li>Seaweed</li>
+            <li>Star-shaped cookies</li>
+          </ul>
+        </td>
+        <td>_</td>
+      </tr>
     </tbody>
   </table>
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+  <p><strong>Step 1:</strong> Do something.</p>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+  <p><em>Source: <a href="https://www.bbcgoodfood.com/recipes">BBC Good Food</a></em></p>
+
+  <h2 id="recipe2">Recipe #2: Skewered Grilled Umeboshi with Apple Slices</h2>
+  <img class="recipe-image" src="https://thejapanstore.us/wp-content/uploads/2021/12/umeboshi_vinegar_en_01.jpg" alt="Skewered Grilled Umeboshi with Apple Slices">
+
+  <h2 id="recipe3">Recipe #3: Wasabi Ice Cream</h2>
+  <img class="recipe-image" src="https://cdn.glitch.global/71d48050-1dd2-4a17-9e94-e29dbc3b9882/IMG_2403.jpeg?v=1733550649716">
+
+  <p><strong>Step 2:</strong> Scoop it out, place it, put more wasabi on top, serve and enjoy!</p>
 
 </body>
 
